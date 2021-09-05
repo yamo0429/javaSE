@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE servlets SYSTEM "05-servlet.dtd">
+<servlets>
+	<servlet >
+		<servlet-name>servlet1</servlet-name>
+		<servlet-class>com.itheima.servlet1</servlet-class>
+	</servlet>
+	<servlet >
+		<servlet-name>servlet2</servlet-name>
+		<servlet-class>com.itheima.servlet2</servlet-class>
+	</servlet>
+	<!-- map : 映射表  key : value -->
+	<servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>/day01</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>/day02</url-pattern>
+	</servlet-mapping>
+</servlets>

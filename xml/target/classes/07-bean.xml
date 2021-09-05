@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.example.org/bean-schema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/bean-schema 07-bean.xsd">
+	<bean className="com.itheima.servlet" id="001">
+		<property name="spy" value="18"/>
+		<property name="supergirl" value="18"/>
+	</bean>
+	
+	<bean className="com.itheima.servlet2" id="002">
+		<property name="jack" value="12"/>
+	    <property name="taoyawei" value="40"/>
+	</bean>
+</beans>

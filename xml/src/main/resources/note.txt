@@ -1,0 +1,20 @@
+<!DOCTYPE 根元素 [元素声明]>
+带有 DTD 的 XML 文档实例（请在 IE5 以及更高的版本打开，并选择查看源代码）：
+
+<?xml version="1.0"?>
+<!DOCTYPE note [
+  <!ELEMENT note (to,from,heading,body)>
+  <!ELEMENT to      (#PCDATA)>
+  <!ELEMENT from    (#PCDATA)>
+  <!ELEMENT heading (#PCDATA)>
+  <!ELEMENT body    (#PCDATA)>
+]>
+<note>
+  <to>George</to>
+  <from>John</from>
+  <heading>Reminder</heading>
+  <body>Don't forget the meeting!</body>
+</note>
+
+<!ATTLIST 元素名称 属性名称 属性类型 默认值>DTD 实例:
+<!ATTLIST payment type CDATA "check">

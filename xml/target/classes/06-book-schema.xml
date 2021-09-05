@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- schema约束 -->
+<!-- 直接在根标签中用 -->
+<books	xmlns="http://www.itheima.com/06-book"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.itheima.com/06-book 06-book.xsd"
+	>
+	<book author = "张三">
+		<name>Java从入门到放弃</name>
+		<price> 998</price>
+		<desc>&lt;太极&gt;是附赠读物！</desc>
+	</book>
+	
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book author = "李四">
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+</books>

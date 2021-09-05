@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD外部约束 -->
+<!-- 相当于导包 -->
+<!DOCTYPE books SYSTEM "04-book.dtd">
+
+<books>
+	<book author = "张三">
+		<name>Java从入门到放弃</name>
+		<price> 998</price>
+		<desc>&lt;太极&gt;是附赠读物！</desc>
+	</book>
+	
+	<book >
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book >
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+</books>

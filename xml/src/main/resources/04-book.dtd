@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT books (book+)>
+  <!ELEMENT book    (name,price,desc)>
+  <!ELEMENT name    (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT desc    (#PCDATA)>
+  <!ATTLIST book author CDATA "张三">
