@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 文档声明     版本 xml1.0   编码  utf-8 -->
+
+<!-- xml有根标签，有，且仅有一个 -->
+<!-- xml的标签有开标签，就有闭标签，成对出现 -->
+<!--  xml允许标签自关闭-->
+<!-- xml的标签允许有属性    属性名 = 属性值 -->
+<store>
+	<product category = "手机数码">
+		<pid>001</pid>
+		<name>华为手机</name>
+		<price>998</price>
+		<owner name = "spy"/>
+	</product>
+	
+	<product category = "电脑办公">
+		<pid>002</pid>
+		<name>Dell笔记本</name>
+		<price>1000</price>
+	</product>
+	
+	<product category = "家用电器">
+		<pid>003</pid>
+		<name>格力空调</name>
+		<price>2000</price>
+	</product>
+	
+</store>

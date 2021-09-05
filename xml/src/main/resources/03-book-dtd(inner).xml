@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD内部约束 -->
+<!-- PCDATA   parse character data 解析字符数据 -->
+<!DOCTYPE books [
+<!-- 正则表达式  +（一个或多个） ？(0个或1个) *（0个或多个） -->
+  <!ELEMENT books (book+)>
+  <!ELEMENT book    (name,price,desc)>
+  <!ELEMENT name    (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT desc    (#PCDATA)>
+  <!ATTLIST book author CDATA "张三">
+]>
+<books>
+	<book author = "张三">
+		<name>Java从入门到放弃</name>
+		<price> 998</price>
+		<desc>&lt;太极&gt;是附赠读物！</desc>
+	</book>
+	
+	<book >
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+	<book >
+		<name>thinking in java</name>
+		<price> 12</price>
+		<desc>呵呵，反正你看不懂</desc>
+	</book>
+</books>

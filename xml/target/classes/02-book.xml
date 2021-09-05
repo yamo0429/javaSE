@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CDATA  character data   字符数据，CData区的内容不会被解析-->
+<!-- "<![CDATA[" 开始，由 "]]>"  -->
+<books>
+	<book>
+	<!--转义字符 lt : less than <     gt: greater than > -->
+		<name>Java从入门到放弃</name>
+		<price> 998</price>
+		<author>张三丰</author>
+		<desc>&lt;太极&gt;是附赠读物！</desc>
+	</book>
+	
+	<book>
+		<name>thinking in java</name>
+		<price> 12</price>
+		<author>灭绝师太</author>
+		<desc><![CDATA[char c = 'a';
+			if( c >= '0' && c <= '9'){
+				System.out.println("找到：" + c);
+			}else{
+				System.out.println("没找到：" + c);
+			}
+		]]>
+
+		</desc>
+	</book>
+</books>

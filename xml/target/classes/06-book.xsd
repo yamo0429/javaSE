@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xmlns : xml name space 默认引用的 命名空间  一般就是 w3c-->
+<!-- xmlns:tns  自定义引用（标签） tns是别名，也是约束前缀，要用不用都可以-->
+<!-- targetNamespace: 目标命名空间    schema 就是一个命名空间技术（URI） 可以自定义路径 -->
+<!-- URI： 统一资源标示符  （本地路径 + 网络路径）   URL：统一资源定位符（网络路径）    -->
+<!-- elementFormDefault：qualified（全部标签约束）  unqualified(只对根标签生效)-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.itheima.com/06-book" 
+	xmlns:tns="http://www.itheima.com/06-book" 
+	elementFormDefault="qualified">
+	<!-- 定义元素element -->
+	<element name="books">
+		<!-- 复杂标签（标签有属性或者子标签）    还是    简单标签 -->
+		<complexType>
+			<!-- 排列：指出字标签的顺序 -->
+			<sequence>
+				<element name="book" minOccurs="1" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+								<!-- 简单标签， 指定数据type -->
+							<element name="name" type="string"></element>
+							<element name="price" type="string"></element>
+							<element name="desc" type="string"></element>
+						</sequence>
+						<!-- 定义标签属性， use使用要求：可选、禁止、必须 -->
+						<attribute name="author" use="required"></attribute>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+	
+</schema>

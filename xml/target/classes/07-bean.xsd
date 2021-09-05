@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Schema 教学实例文档 :
+	模拟 spring 框架规范 : 如果开发人员需要在 xml 使用当前 schema 约束, 必须包含指定命名空间.
+	格式如下 :
+	<beans xmlns="http://www.example.org/bean-schema"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.example.org/bean-schema bean-schema.xsd">
+ -->
+ 
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.example.org/bean-schema" 
+	xmlns:tns="http://www.example.org/bean-schema" 
+	elementFormDefault="qualified">
+	<!-- 声明根标签 -->
+	<element name="beans">
+		<complexType>
+			<sequence>
+				<element name="bean" minOccurs="0" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="property" minOccurs="0" maxOccurs="unbounded">
+								<complexType>
+									<attribute name="name" type="string" use="required"></attribute>
+									<attribute name="value" type="string" use="required"></attribute>
+								</complexType>
+							</element>
+						</sequence>
+						<attribute name="id" type="string" use="required"></attribute>
+						<attribute name="className" type="string" use="required"></attribute>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
